@@ -1,0 +1,92 @@
+<script type="text/javascript" language="javascript" src="http://www.2977.com/dqqyz/js/login.js"></script>
+<link href="http://www.2977.com/dqqyz/css/dqqz.css" rel="stylesheet" type="text/css">
+<%if (!RealLife.Platform.User.LoginInfo.IsLogin)
+  {%>
+<form id="form" method="post">
+<div class="login" style="display: block">
+<div style="padding-top: 45px;">
+<form name="login_form" id="login_form" method="post">
+  <table width="100%" height="90" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="30%" height="30" align="right">用户名：</td>
+        <td width="70%" height="30"><input type="text" class="input" id="account" name="account" placeholder="请输入账�? tabindex="1"></td>
+      </tr>
+      <tr>
+        <td height="30" align="right">密　码：</td>
+        <td height="30"><input type="password" class="input" id="pass" name="pass" placeholder="请输入密�? tabindex="2"></td>
+      </tr>
+      <tr>
+        <td height="30" align="right">验证码：</td>
+        <td height="30"><input maxlength="4" type="text" class="input" id="code" name="code" tabindex="3" style="width:80px"/>
+          <img id="imgSafe" alt="验证�? /></td>
+      </tr>
+    </tbody>
+  </table>
+  <span style="width: 234px; margin: 0 auto; display: block;">
+  <input type="submit" class="login01" value="" />
+  <a href="javascript:_gotoreg();" class="login02"></a></span>
+  <div class="clear"></div>
+  <a href="http://user.2977.com/getpwd.aspx" class="forget">忘记密码�?/a>
+</form>
+</div>
+</div>
+<%}else{%>
+<div class="login" style="display: block">
+  <div style="padding-top: 45px;">
+    <table width="100%" height="147" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td width="14%" height="20">&nbsp;</td>
+          <td width="86%" height="20">欢迎您登大清群英传官�?/td>
+        </tr>
+        <tr>
+          <td height="20">&nbsp;</td>
+          <td height="20">用户�?span><%=RealLife.Platform.User.LoginInfo.Account %>(idx:<%=RealLife.Platform.User.LoginInfo.Idx %>)</span></td>
+        </tr>
+        <%
+      string svr = RealLife.Game.Game.GetLastPlayServer("qyz",RealLife.Platform.User.LoginInfo.Idx.ToString());
+      if(!String.IsNullOrEmpty(svr)){
+     %>
+        <tr>
+          <td height="20">&nbsp;</td>
+          <td height="20">继续上次游戏:<a href="/dqqyz/logintodq.aspx?svrid=<%=svr %>" target="_blank"> <%=RealLife.Game.Game.GetServerName("qyz",svr)%></a></td>
+        </tr>
+        <%}else{ %>
+        <tr>
+          <td height="20">&nbsp;</td>
+          <td height="20">官方推荐服务�?
+            <% var s = RealLife.Game.Game.GetTopTuiServer("qyz");%>
+            <a href="/dqqyz/logintodq.aspx?svrid=<%=s.SvrId %>" target="_blank"> <%=s.SvrName %></a></td>
+        </tr>
+        <%} %>
+        <tr>
+          <td height="45" colspan="2"><a href="javascript:void(0)" onclick="_logout()" class="exit_btn"></a></td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="http://www.2977.com/dqqyz/card/index.aspx" title="领取新手�? class="getgift_btn"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<%}%>
+<script>
+    $("#form").attr("action", "http://user.2977.com/login.aspx?1=2&a=logout&u=" + escape(window.location.href))
+
+</script> 
+<script type="text/javascript">
+    $(function () {
+        $("#imgSafe").click(function () {
+            $(this).attr("src", "http://user.2977.com/ValidateNum.aspx?dumy=" + Math.random());
+        });
+
+        $("#imgSafe").trigger("click");
+
+
+    });
+
+     function _logout() {
+            window.location.href = "http://user.2977.com/login.aspx?a=logout&u=" + escape(window.location.href);
+        }
+</script> 

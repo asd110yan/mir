@@ -1,0 +1,68 @@
+﻿*
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+h1
+{
+    font-family: "Times New Roman" , Times, serif;
+    font-size: 72px;
+    color: #0081c2;
+}
+
+.liMenu
+{
+    margin-top: 10px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.aMenuItem
+{
+    color: #0081c2;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+.itemImg
+{
+    vertical-align: top;
+}
+#sysName
+{
+    float: left;
+}
+#welcome
+{
+    float: right;
+    margin-top: 75px;
+}
+img
+{
+    border: none;
+}
+#login
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.mgTable
+{
+    line-height: 25px;
+}
+
+.left
+{
+    float: left;
+    margin: 2px 1px;
+}

@@ -1,0 +1,25 @@
+
+ 
+记录时间：2014-10-03 16:49:48,632 
+线程ID:[8752] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取管理员出错:错误出现在 Get(string userName)方法
+ 
+System.Exception: 获取管理员出错:错误出现在 Get(string userName)方法 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 YX.Mir.DAL.AdminDAL.Get(String userName) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\AdminDAL.cs:行号 29
+   在 YX.Mir.BLL.AdminBLL.Get(String userName) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\AdminBLL.cs:行号 45
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.AdminBLL.Get(String userName) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\AdminBLL.cs:行号 50
+   在 YX.Mir.Common.OnlineUser.get_OnLineUser() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\OnlineUser.cs:行号 46
+   在 YX.Mir.Web.Controllers.CheckLoginAttribute.System.Web.Mvc.IAuthorizationFilter.OnAuthorization(AuthorizationContext filterContext) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Controllers\BaseController.cs:行号 56
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)

@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "MDlg";
+}
+
+<table class="mgTable">
+    <tr>
+        <td class="right">
+            <span style="color: red">*</span>菜单名称:
+        </td>
+        <td>
+            <input class="easyui-validatebox" data-options="required:true" id="MenuName" style="width: 200px;" value="@ViewBag.MenuName" />
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            所属菜单组:
+        </td>
+        <td>
+            <input type="hidden"  id="MGId" value="@ViewBag.MGId" />
+            <input class="easyui-validatebox" value="@ViewBag.MenuGroupName" id="MGNamme" disabled="true" style="width: 200px;" /><a
+                                                                                                                                      href="javascript:void(0)" onclick=" $('#MGNamme').val(''); $('#MGId').val(''); "><img
+                                                                                                                                                                                                                           src="../../../easyui/themes/icons_custom/no.png" /></a>&nbsp;<a id="menuBtn" href="#" onclick=" showMenu(); return false; ">选择</a>
+            <ul id="tree2" class="ztree" style="overflow: auto;">
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            排序:
+        </td>
+        <td>
+            <input class="easyui-numberbox" id="Sort" value="@ViewData["SORT"]" data-options="min:0,required:true" />
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            图标:
+        </td>
+        <td>
+            <input id="txtIcon" value="@ViewBag.Icon" /> <a  href="javascript:void(0)" onclick=" showIconDlg() "><img src="../../../easyui/themes/icons_custom/search.png" /></a>
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            <span style="color: red">*</span>所属页面:
+        </td>
+        <td>
+            <input class="easyui-validatebox" data-options="required:true" id="Page" style="width: 200px;" value="@ViewBag.Page" />
+        </td>
+    </tr>
+</table>
+<div id="menuContent" class="menuContent" style="display: none; position: absolute;">
+    <ul id="treeDemo" class="ztree" style="margin-top: 0; width: 160px;">
+    </ul>
+</div>
+<script type="text/javascript">
+
+
+//---------------------------------------Begin zTree---------------------------------------
+    function showMenu() {
+        $.fn.zTree.init($("#tree2"), setting);
+        var Obj = $("#MGNamme");
+        var Offset = $("#MGNamme").offset();
+        $("#menuContent").css({ left: Offset.left + "px", top: Offset.top + Obj.outerHeight() + "px" }).slideDown("fast");
+
+        $("body").bind("mousedown", onBodyDown);
+    }
+
+    function hideMenu() {
+        $("#menuContent").fadeOut("fast");
+        $("body").unbind("mousedown", onBodyDown);
+    }
+
+    function onBodyDown(event) {
+        if (!(event.target.id == "menuBtn" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length > 0)) {
+            hideMenu();
+        }
+    }
+
+
+    var setting = {
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        async: {
+            enable: true,
+            url: "/menu/getmenugrouptree",
+            autoParam: ["id", "name=n", "level=lv"]
+        },
+        callback: {
+            onClick: function zTreeOnClick(event, treeId, treeNode) {
+
+                $("#MGNamme").val(treeNode.name);
+                $("#MGId").val(treeNode.id);
+            }
+        }
+    };
+
+
+    //---------------------------------------End zTree---------------------------------------
+</script>

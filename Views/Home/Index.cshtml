@@ -1,0 +1,126 @@
+﻿@using YX.Mir
+@using YX.Mir.Common
+@{
+    ViewBag.Title = WebConfig.WebName + "后台管理系统";
+}
+<style type="text/css">
+<!--
+    .STYLE1 { color: #999999 }
+
+    .STYLE2 { color: #FF0000 }
+-->
+</style>
+<div id="cc" class="easyui-layout" style="height: 800px; width: 100%;">
+    <div data-options="region:'north'" style="height: 100px;">
+        <div id="sysName">
+            <h1>@WebConfig.WebName</h1>
+        </div>
+        <div id="welcome">
+            <span class="STYLE1">本系统欢迎您:</span><span class="STYLE2">[@OnlineUser.OnLineUserName]</span>&nbsp;&nbsp;</span><a
+                                                                                                                              href="javascript:void(0)"><img src="../../easyui/themes/icons_custom/house_go.png" /></a>
+            <a href="javascript:void(0)">
+                <img src="../../easyui/themes/icons_custom/key.png" /></a> <a href="javascript:void(0)">
+                                                                               <img src="../../easyui/themes/icons_custom/monitor_go.png" onclick=" logout() " /></a>
+        </div>
+    </div>
+    <div data-options="region:'west',title:'左侧导航',split:true,iconCls:'icon-nav'" style="width: 200px;">
+        <div id="menuList" class="easyui-accordion" style="height: auto; width: 300px;">
+            <div title="管理中心" data-options="iconCls:'icon-server'" style="overflow: auto; padding: 10px;">
+                <ul>
+                    <li style="margin-left: 10px; margin-top: 5px; padding: 0px;"><a class="aMenuItem"
+                                                                                     href="javascript:void(0)" url="/home/config">
+                                                                                      <img class="itemImg" src="../../easyui/themes/icons_custom/application_edit.png" />站点配置</a></li>
+                    <li class="liMenu"><a class="aMenuItem" href="javascript:void(0)" url="/home/menuconfig">
+                                           <img class="itemImg" src="../../easyui/themes/icons_custom/nav.png" />菜单配置</a></li>
+                    <li class="liMenu"><a class="aMenuItem" href="javascript:void(0)">
+                                           <img class="itemImg" src="../../easyui/themes/icons_custom/lock_edit.png" />修改密码</a></li>
+                    <li class="liMenu"><a class="aMenuItem" href="javascript:void(0)" url="/home/loginlog">
+                                           <img class="itemImg" src="../../easyui/themes/icons_custom/note.png" />登陆日志</a></li>
+                    <li class="liMenu"><a class="aMenuItem" href="javascript:void(0)" url="/home/errorlog">
+                                           <img class="itemImg" src="../../easyui/themes/icons_custom/error.png" />错误日志</a></li>
+                </ul>
+            </div>
+            <div title="菜单列表" data-options="iconCls:'icon-page'" style="padding: 10px;">
+                <ul id="ztree" class="ztree">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center',title:'操作中心',iconCls:'icon-application_osx_terminal'"
+         style="background: #eee; padding: 5px;">
+        <div id="tt" class="easyui-tabs">
+            <script type="text/javascript">
+
+                function addTab(a) {
+                    var a = $(a);
+                    var title = a.text();
+                    var url = a.attr("url");
+                    var exist = $("#tt").tabs('exists', title);
+                    if (!exist) {
+                        $('#tt').tabs('add', {
+                            title: title,
+                            content: createIframe(url),
+                            closable: true,
+                            iconCls: "icon-user"
+                        });
+                    } else {
+                        $("#tt").tabs('select', title);
+                        var currTab = $('#tt').tabs('getTab', title);
+                        var iframe = $(currTab.panel('options').content);
+                        var src = iframe.attr('src');
+                        $('#tt').tabs('update', { tab: currTab, options: { content: createIframe(src) } });
+                    }
+                }
+
+
+
+                $(function() {
+                    $.fn.zTree.init($("#ztree"), setting, zNodes);
+                    if (!$("#tt").tabs("exists", "主页")) {
+                        $('#tt').tabs('add', {
+                            title: "主页",
+                            content: createIframe('/home/index1'),
+                            closable: true,
+                            iconCls: "icon-house"
+                        });
+                    }
+
+                    //点击菜单项弹出Tab
+                    $(".aMenuItem").click(function() {
+                        addTab($(this));
+                    });
+                });
+
+                var setting = {
+                    callback: {
+                        onClick: function zTreeOnClick(event, treeId, treeNode) {
+                            var page = treeNode.page;
+                            if (page != "undefined" && page) {
+                                var title = treeNode.name;
+                                var url = page;
+                                var exist = $("#tt").tabs('exists', title);
+                                var icon = treeNode.icon ? "icon-" + treeNode.icon.substring(treeNode.icon.lastIndexOf("/") + 1).replace(".png", "") : "";
+                                if (!exist) {
+                                    $('#tt').tabs('add', {
+                                        title: title,
+                                        content: createIframe(page),
+                                        closable: true,
+                                        iconCls: "" + icon + ""
+                                    });
+                                } else {
+                                    $("#tt").tabs('select', title);
+                                    var currTab = $('#tt').tabs('getTab', title);
+                                    var iframe = $(currTab.panel('options').content);
+                                    var src = iframe.attr('src');
+                                    $('#tt').tabs('update', { tab: currTab, options: { content: createIframe(src) } });
+                                }
+                            }
+                        }
+                    }
+                };
+                var zNodes = @Html.Raw(ViewBag.MenuTree); //-->
+
+            </script>
+        </div>
+    </div>
+</div>

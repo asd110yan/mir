@@ -1,0 +1,235 @@
+﻿@model YX.Mir.Model.Models.WebSiteInfo
+@{
+    ViewBag.Title = "网站配置";
+    string action = "addconfig";
+    if (Model != null && Model.Id != 0)
+    {
+        action = "updateconfig";
+    }
+}
+<style type="text/css">
+<!--
+    body, table {
+        color: #0081c2;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    table {
+        border-collapse: collapse;
+        empty-cells: show;
+        line-height: 30px;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    td { height: 20px; }
+
+    h1, h2, h3 {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        background: #FFF;
+        border: 1px solid #9DB3C5;
+        margin: 20px auto;
+        padding: 1px;
+        width: 90%;
+    }
+
+    .title h1 {
+        background: #2F589C url(th_bg2.gif);
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        color: #FFF;
+        line-height: 31px;
+        text-align: center;
+    }
+
+    .title th, .title td {
+        border: 1px solid #CAD9EA;
+        padding: 5px;
+    }
+
+
+    /*这个是借鉴一个论坛的样式*/
+
+    table.t1 {
+        border: 1px solid #cad9ea;
+        color: #666;
+    }
+
+    table.t1 th {
+        background-image: url(th_bg1.gif);
+        background-repeat::
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t1 td, table.t1 th {
+        border: 1px solid #cad9ea;
+        padding: 0 1em 0;
+    }
+
+    table.t1 tr.a1 { background-color: #f5fafe; }
+
+
+
+    table.t2 {
+        border: 1px solid #9db3c5;
+        color: #666;
+    }
+
+    table.t2 th {
+        background-image: url(th_bg2.gif);
+        background-repeat::
+        color: #fff;
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t2 td {
+        border: 1px dotted #cad9ea;
+        padding: 0 2px 0;
+    }
+
+    table.t2 th {
+        border: 1px solid #a7d1fd;
+        padding: 0 2px 0;
+    }
+
+    table.t2 tr.a1 { background-color: #e8f3fd; }
+
+
+
+    table.t3 {
+        border: 1px solid #fc58a6;
+        color: #720337;
+    }
+
+    table.t3 th {
+        background-image: url(th_bg3.gif);
+        background-repeat::
+        color: #35031b;
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t3 td {
+        border: 1px dashed #feb8d9;
+        padding: 0 1.5em 0;
+    }
+
+    table.t3 th {
+        border: 1px solid #b9f9dc;
+        padding: 0 2px 0;
+    }
+
+    table.t3 tr.a1 { background-color: #fbd8e8; }
+
+    .lefttd {
+        color: #0081c2;
+        text-align: right;
+        width: 200px;
+    }
+
+    .field-validation-error { color: red }
+-->
+</style>
+<link rel="stylesheet" href="../../kindeditor-4.1.7/themes/default/default.css" />
+<link rel="stylesheet" href="../../kindeditor-4.1.7/plugins/code/prettify.css" />
+<script charset="utf-8" src="../../kindeditor-4.1.7/kindeditor.js"></script>
+<script charset="utf-8" src="../../kindeditor-4.1.7/lang/zh_CN.js"></script>
+<script charset="utf-8" src="../../kindeditor-4.1.7/plugins/code/prettify.js"></script>
+@using (Ajax.BeginForm(action, "home", new AjaxOptions {HttpMethod = "post", UpdateTargetId = "result", LoadingElementId = "loading"}, new {id = "frmConfig"}))
+{
+    <div id="loading"></div>
+    <div id="result"></div>
+    <table width="100%" id="mytab"  border="1" class="t1">
+        <tr >
+            <td class="lefttd">
+                带<span style="color: red">*</span>号的为必填
+            </td>
+            <td>@Html.HiddenFor(m => m.Id)</td>
+        </tr>
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red">*</span>网站名称:</td>
+            <td>@Html.TextBoxFor(m => m.WebName, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.WebName)
+            </td>
+        </tr>
+        <tr >
+            <td class="lefttd"><span style="color: red">*</span>网站域名:</td>
+            <td>@Html.TextBoxFor(m => m.WebUrl, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.WebUrl)
+            </td>
+        </tr>
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red"></span>网站关键词:</td>
+            <td>@Html.TextBoxFor(m => m.WebKeyword, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.WebKeyword)
+            </td>
+        </tr>
+        <tr >
+            <td class="lefttd"><span style="color: red"></span>网站描述:</td>
+            <td>@Html.TextAreaFor(m => m.WebContent, new {style = "height:100px;width:500px;"})
+                @Html.ValidationMessageFor(m => m.WebContent)
+            </td>
+        </tr>
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red"></span>网站创始人:</td>
+            <td>@Html.TextBoxFor(m => m.WebBuilder, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.WebBuilder)
+            </td>
+        </tr>
+        <tr>
+            <td class="lefttd"><span style="color: red"></span>网站版权:</td>
+            <td>@Html.TextAreaFor(m => m.WebCopyright, new {style = "height:100px;width:500px;"})
+                @Html.ValidationMessageFor(m => m.WebCopyright)
+            </td>
+        </tr>
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red"></span>网站底部版权:</td>
+            <td>@Html.TextAreaFor(m => m.WebBottomCopyright, new {style = "height:100px;width:500px;"})
+                @Html.ValidationMessageFor(m => m.WebBottomCopyright)
+            </td>
+        </tr>
+        <tr>
+            <td class="lefttd"><span style="color: red"></span>网站介绍:</td>
+            <td>@Html.TextAreaFor(m => m.WebIntroduce, new {style = "height:300px;width:700px;"})
+                @Html.ValidationMessageFor(m => m.WebIntroduce)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input id="Submit" type="submit" value="提交" style="height: 25px; width: 100px;" />
+                @*              <a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#frmConfig').submit()" data-options:"iconCls:'icon-save'" >保存</a>*@
+            </td>
+        </tr>
+    </table>
+}
+<script type="text/javascript">
+    var editor1 = null;
+    KindEditor.ready(function(K) {
+        editor1 = K.create('#WebIntroduce,', {
+            cssPath: '../../kindeditor-4.1.7/plugins/code/prettify.css',
+            uploadJson: '../../kindeditor-4.1.7/asp.net/upload_json.ashx',
+            fileManagerJson: '../../kindeditor-4.1.7/asp.net/file_manager_json.ashx',
+            allowFileManager: true,
+            afterCreate: function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+            }
+        });
+        prettyPrint();
+    });
+</script>

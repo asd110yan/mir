@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="easyui/themes/bootstrap/easyui.css">
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+<script type="text/javascript" src="easyui/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #999999
+}
+.STYLE2 {
+	color: #FF0000
+}
+-->
+</style>
+</head>
+<body>
+<div id="cc" class="easyui-layout" style="width:100%;height:800px;">
+  <div data-options="region:'north'" style="height:100px;">
+    <div id="sysName">
+      <h1>邪神软件后台管理系统</h1>
+    </div>
+    <div id="welcome"> <span class="STYLE1">本系统欢迎您:</span><span class="STYLE2">[admin]</span>&nbsp;&nbsp;</span><a href="javascript:void(0)"><img src="easyui/themes/icons_custom/house_go.png"  /></a> <a href="javascript:void(0)" ><img src="easyui/themes/icons_custom/key.png" /></a> <a href="javascript:void(0)"><img src="easyui/themes/icons_custom/monitor_go.png"  /></a> </div>
+  </div>
+  <div data-options="region:'west',title:'菜单列表',split:true,iconCls:'icon-nav'" style="width:200px;">
+    <div id="menuList" class="easyui-accordion" style="width:300px;height:auto;">
+      <div title="管理中心" data-options="iconCls:'icon-server'" style="overflow:auto;padding:10px;">
+        <ul>
+          <li  style="margin-top: 5px;
+	padding: 0px;
+	margin-left: 10px;"> <a class="aMenuItem" href="javascript:void(0)"><img class="itemImg" src="easyui/themes/icons_custom/application_edit.png" />站点配置</a></li>
+          <li  class="liMenu"> <a class="aMenuItem" href="javascript:void(0)"><img class="itemImg" src="easyui/themes/icons_custom/lock_edit.png" />修改密码</a></li>
+          <li  class="liMenu"> <a class="aMenuItem" href="javascript:void(0)"><img class="itemImg" src="easyui/themes/icons_custom/note.png" />登陆日志</a></li>
+        </ul>
+      </div>
+      <div title="文章管理" data-options="iconCls:'icon-page'" style="padding:10px;">
+        <li margin-top: 5px;
+	padding: 0px;
+	margin-left: 10px;> <a class="aMenuItem" href="javascript:void(0)"><img class="itemImg" src="easyui/themes/icons_custom/page_find.png" />文章列表</a></li>
+      </div>
+      <div title="html管理" data-options="iconCls:'icon-html'" style="padding:10px;">
+        <li margin-top: 5px;
+	padding: 0px;
+	margin-left: 10px;> <a class="aMenuItem" href="javascript:void(0)"><img class="itemImg" src="easyui/themes/icons_custom/html_go.png" />在线生成html</a></li>
+      </div>
+    </div>
+  </div>
+  <div  data-options="region:'center',title:'操作中心',iconCls:'icon-application_osx_terminal'" style="padding:5px;background:#eee;">
+    <div id="tt" class="easyui-tabs">
+      <script type="text/javascript">
+
+
+                function addTab(a) {
+                    var a = $(a);
+                    var title = a.text();
+                    var url = a.attr("url");
+                    var exist = $("#tt").tabs('exists', title);
+                    console.log(createIframe(url));
+                    if (!exist) {
+                        $('#tt').tabs('add', {
+                            title: title,
+                            content: createIframe(url),
+                            closable: true,
+                            iconCls: "icon-user"
+                        });
+                    } else {
+                        $("#tt").tabs('select', title);
+                    }
+                }
+
+                function createIframe(url) {
+                    return "<iframe frameborder='0' width='100%' height='700px' scrolling='no' src='" + url + "'></iframe>";
+                }
+
+                $(function() {
+                    if (!$("#tt").tabs("exists", "主页")) {
+                        $('#tt').tabs('add', {
+                            title: "主页",
+                            content: createIframe('http://www.baidu.com'),
+                            closable: true,
+                            iconCls: "icon-house"
+                        });
+                    }
+                });
+            </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

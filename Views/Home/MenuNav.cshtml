@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "菜单导航";
+}
+
+<ul id="ztree" class="ztree"></ul>
+<script type="text/javascript">
+
+    var setting = {
+        callback: {
+            onclick: function zTreeOnClick(event, treeId, treeNode) {
+                alert(treeNode.page);
+            }
+        }
+    };
+
+    var zNodes = @Html.Raw(ViewBag.MenuTree);
+    $(document).ready(function() {
+        $.fn.zTree.init($("#ztree"), setting, zNodes);
+    });
+
+
+</script>

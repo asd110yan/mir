@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "新闻分类";
+}
+<div id="dlgCate">
+</div>
+<table id="tgrdCate">
+</table>
+<script type="text/javascript">
+    $(function () {
+        $("#tgrdCate").treegrid({
+            url: "/news/getcatelist",
+            idField: "CateId",
+            treeField: "CateName",
+            columns: [
+                [
+                    {
+                        field: "CateId",
+                        title: "分类编号",
+                        width: 60,
+                        align: "left"
+                    },
+                    {
+                        field: "CateName",
+                        title: "分类名称",
+                        width: 100,
+                        align: "left"
+                    }
+                ]
+            ],
+                    rownumbers: true,
+                    striped: true,
+            toolbar: [
+                {
+                    text: "增加",
+                    iconCls: "icon-add",
+                    handler: function () {
+                        objCategory.add();
+                    }
+                },
+                {
+                    text: "修改",
+                    iconCls: "icon-edit",
+                    handler: function () {
+                        objCategory.edit();
+                    }
+                },
+                {
+                    text: "删除",
+                    iconCls: "icon-delete",
+                    handler: function () {
+                        objCategory._delete(); 
+                    }
+                },
+                {
+                    text: "刷新",
+                    iconCls: "icon-reload",
+                    handler: function () {
+                     $("#tgrdCate").treegrid("reload");
+                    }
+                }
+            ]
+        });
+    });
+
+    var g_cateId;
+
+    var objCategory = {
+        add: function () {
+            g_cateId = 0;
+            var url = "/news/addcate";
+            createDlg("增加分类", url);
+        },
+        edit: function () {
+            var row = $("#tgrdCate").treegrid("getSelected");
+            if (row) {
+                g_cateId = row.CateId;
+                var url = "/news/editcate?CateId=" + g_cateId;
+                createDlg("编辑分类", url);
+            } else {
+                $.messager.alert("提示信息", "请选择一行要编辑的分类", "info");
+            }
+        },
+        _delete: function () {
+            var row = $("#tgrdCate").treegrid("getSelected");
+            if (row) {
+                $.messager.confirm("提示信息", "是否删除", function (r) {
+                    if (r) {
+                        g_cateId = row.CateId;
+                        var url = "/news/deletecate?CateId=" + g_cateId;
+                        $.ajax({
+                            type: "post",
+                            url: url,
+                            success: function (msg) {
+                                $.messager.alert("提示信息", msg.Message, "info");
+                                if (msg.Code == 1) {
+                                    $("#tgrdCate").treegrid("reload");
+                                }
+                            }
+                        });
+                    }
+                });
+            } else {
+                $.messager.alert("提示信息", "请选择一行要编辑的分类", "info");
+            }
+        }
+    };
+
+    function createDlg(title, url) {
+        $("#dlgCate").dialog({
+            width: 350,
+            modal: true,
+            title: title,
+            buttons: [
+                {
+                    text: "保存",
+                    iconCls: "icon-save",
+                    handler: function () {
+                        if (!$("#CateName").validatebox("isValid") || !$("#Sort").numberbox("isValid")) {
+                            return false;
+                        }
+                        $.ajax({
+                            type: "post",
+                            url: url,
+                            data: {
+                                CateName: $("#CateName").val(),
+                                ParentId: $("#ParentId").val(),
+                                Sort: $("#Sort").val()
+                            },
+                            success: function (msg) {
+                                $.messager.alert("提示信息", msg.Message, "info");
+                                if (msg.Code == 1) {
+                                    $("#dlgCate").dialog("close");
+                                    $("#tgrdCate").treegrid("reload");
+                                }
+                            }
+                        });
+                    }
+                },
+                {
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#dlgCate").dialog("close");
+                    }
+                }
+            ]
+        });
+        $("#dlgCate").dialog("refresh", "/news/catedlg?CateId=" + g_cateId);
+    }
+</script>

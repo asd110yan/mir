@@ -1,0 +1,117 @@
+@using YX.Mir
+@{
+    ViewBag.Title = WebConfig.WebName + "后台登陆";
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+    <HEAD>
+        <TITLE>用户登录</TITLE>
+        <LINK 
+            href="/../../image/Default.css" type=text/css rel=stylesheet>
+        <LINK 
+            href="../../image/xtree.css" type=text/css rel=stylesheet>
+        <LINK 
+            href="../../image/User_Login.css" type=text/css rel=stylesheet>
+        <META http-equiv=Content-Type content="text/html; charset=gb2312">
+        <META content="MSHTML 6.00.6000.16674" name=GENERATOR>
+    </HEAD>
+    <BODY id=userlogin_body>
+        <DIV></DIV>
+        <DIV id=user_login>
+            <DL>
+                <DD id=user_top>
+                <UL>
+                    <LI class=user_top_l></LI>
+                    <LI class=user_top_c></LI>
+                    <LI class=user_top_r></LI>
+                </UL>
+                <DD id=user_main>
+                <UL>
+                    <LI class=user_main_l></LI>
+                    <LI class=user_main_c>
+                        <DIV class=user_main_box>
+                            <UL>
+                                <LI class=user_main_text>用户名： </LI>
+                                <LI class=user_main_input>
+                                    <INPUT class=TxtUserNameCssClass id="TxtUserName" 
+                                           maxLength=20 name=TxtUserName>
+                                </LI>
+                            </UL>
+                            <UL>
+                                <LI class=user_main_text>密 码： </LI>
+                                <LI class=user_main_input>
+                                    <INPUT class=TxtPasswordCssClass id=TxtPassword 
+                                           type=password name=TxtPassword>
+                                </LI>
+                            </UL>
+                            <UL>
+                                <LI class=user_main_text>Cookie： </LI>
+                                <LI class=user_main_input>
+                                    <SELECT id=DropExpiration name=DropExpiration>
+                                        <OPTION value=None selected>不保存</OPTION>
+                                        <OPTION value=Day>保存一天</OPTION>
+                                        <OPTION value=Month>保存一月</OPTION>
+                                        <OPTION 
+                                            value=Year>保存一年</OPTION>
+                                    </SELECT>
+                                </LI>
+                            </UL>
+                        </DIV>
+                    </LI>
+                    <LI class=user_main_r>
+                        <INPUT class=IbtnEnterCssClass id=IbtnEnter 
+                               style="BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px;" 
+                               type=image src="../../image/user_botton.gif" name=IbtnEnter>
+                    </LI>
+                </UL>
+            </DL>
+        </DIV>
+        <SPAN id=ValrUserName 
+              style="COLOR: red; DISPLAY: none;"></SPAN><SPAN id=ValrPassword 
+                                                              style="COLOR: red; DISPLAY: none;"></SPAN><SPAN id=ValrValidateCode 
+                                                                                                              style="COLOR: red; DISPLAY: none;"></SPAN>
+        <DIV id=ValidationSummary1 style="COLOR: red; DISPLAY: none;"></DIV>
+        <DIV></DIV>
+        <script type="text/javascript">
+
+            $(function() {
+                var btn = $("#IbtnEnter");
+
+                //回车
+                $(document).keydown(function(e) {
+                    if (e.keyCode == 13) {
+                        btn.click();
+                    }
+                });
+                btn.click(function() {
+                    var userName = $("#TxtUserName").val();
+                    var pwd = $("#TxtPassword").val();
+                    var cookie = $("#DropExpiration").val();
+                    if (!userName) {
+                        alert("请输入用户名");
+                        $("#TxtUserName").focus();
+                        return false;
+                    }
+                    if (!pwd) {
+                        alert("请输入密码");
+                        $("#TxtPassword").focus();
+                        return false;
+                    }
+                    $.ajax({
+                        type: "post",
+                        url: "/home/getadmin",
+                        data: { userName: userName, pwd: pwd, lastTime: cookie },
+                        success: function(msg) {
+                            if (msg.Code != 1) {
+                                alert(msg.Message);
+                            } else {
+                                location.href = "@ViewBag.ReturnUrl";
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
+    </BODY>
+</HTML>

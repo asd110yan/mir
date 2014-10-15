@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "MGDlg";
+}
+<table class="mgTable">
+    <tr>
+        <td class="right">
+            <span style="color: red">*</span>菜单组名称:
+        </td>
+        <td>
+            <input class="easyui-validatebox" data-options="required:true" id="txtMGName" style="width: 200px;" value="@ViewBag.Name" />
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            上级菜单组:
+        </td>
+        <td>
+            <input type="hidden"  id="txtParentId" value="@ViewBag.ParentId" />
+            <input class="easyui-validatebox" value="@ViewBag.ParentName" id="txtParentName" disabled="true" style="width: 200px;" /><a
+                                                                                                                                         href="javascript:void(0)" onclick=" $('#txtParentName').val(''); $('#txtParentId').val(''); "><img
+                                                                                                                                                                                                                                           src="../../../easyui/themes/icons_custom/no.png" /></a>&nbsp;<a id="menuBtn" href="#" onclick=" showMenu(); return false; ">选择</a>
+            <ul id="tree1" class="ztree" style="overflow: auto;">
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            排序:
+        </td>
+        <td>
+            <input class="easyui-numberbox" id="txtSort" value="@ViewData["SORT"]" data-options="min:0,required:true" />
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            图标:
+        </td>
+        <td>
+            <input id="txtIcon" value="@ViewBag.Icon" /> <a  href="javascript:void(0)" onclick=" showIconDlg() "><img src="../../../easyui/themes/icons_custom/search.png" /></a>
+        </td>
+    </tr>
+</table>
+<script>
+    //---------------------------------------Begin zTree---------------------------------------
+    function showMenu() {
+        $.fn.zTree.init($("#tree1"), setting);
+    }
+
+
+    var setting = {
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        async: {
+            enable: true,
+            url: "/menu/getmenugrouptree",
+            autoParam: ["id", "name=n", "level=lv"]
+        },
+        callback: {
+            onClick: function zTreeOnClick(event, treeId, treeNode) {
+
+                $("#txtParentName").val(treeNode.name);
+                $("#txtParentId").val(treeNode.id);
+            }
+        }
+    };
+
+
+    //---------------------------------------End zTree---------------------------------------
+</script>

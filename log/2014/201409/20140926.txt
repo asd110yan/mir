@@ -1,0 +1,914 @@
+
+ 
+记录时间：2014-09-26 11:26:57,221 
+线程ID:[14184] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+操作可能会破坏运行时稳定性。
+ 
+System.Security.VerificationException: 操作可能会破坏运行时稳定性。
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost.GetRidOfNamespace(String ns)
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost..ctor(String virtualPath, String physicalPath)
+   在 System.Web.Mvc.MvcWebRazorHostFactory.CreateHost(String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfigCore(RazorWebSectionGroup config, String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.RazorBuildProvider.GetHostFromConfig()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.CreateHost()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   在 System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   在 System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   在 System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   在 System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-26 11:27:04,961 
+线程ID:[14168] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+操作可能会破坏运行时稳定性。
+ 
+System.Security.VerificationException: 操作可能会破坏运行时稳定性。
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost.GetRidOfNamespace(String ns)
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost..ctor(String virtualPath, String physicalPath)
+   在 System.Web.Mvc.MvcWebRazorHostFactory.CreateHost(String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfigCore(RazorWebSectionGroup config, String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(String virtualPath, String physicalPath)
+   在 System.Web.WebPages.Razor.RazorBuildProvider.GetHostFromConfig()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.CreateHost()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   在 System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   在 System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   在 System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   在 System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-26 11:31:10,168 
+线程ID:[14184] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+找不到方法:“System.Collections.Generic.Dictionary`2<System.String,BlockParser> System.Web.Razor.Parser.CSharpCodeParser.get_RazorKeywords()”。
+ 
+System.MissingMethodException: 找不到方法:“System.Collections.Generic.Dictionary`2<System.String,BlockParser> System.Web.Razor.Parser.CSharpCodeParser.get_RazorKeywords()”。
+   在 System.Web.Mvc.Razor.MvcCSharpRazorCodeParser..ctor()
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeParser(ParserBase incomingCodeParser)
+   在 System.Web.Razor.RazorTemplateEngine.CreateParser()
+   在 System.Web.Razor.RazorTemplateEngine.GenerateCodeCore(ITextDocument input, String className, String rootNamespace, String sourceFileName, Nullable`1 cancelToken)
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   在 System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   在 System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   在 System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   在 System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-26 11:31:11,385 
+线程ID:[14216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+找不到方法:“System.Collections.Generic.Dictionary`2<System.String,BlockParser> System.Web.Razor.Parser.CSharpCodeParser.get_RazorKeywords()”。
+ 
+System.MissingMethodException: 找不到方法:“System.Collections.Generic.Dictionary`2<System.String,BlockParser> System.Web.Razor.Parser.CSharpCodeParser.get_RazorKeywords()”。
+   在 System.Web.Mvc.Razor.MvcCSharpRazorCodeParser..ctor()
+   在 System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeParser(ParserBase incomingCodeParser)
+   在 System.Web.Razor.RazorTemplateEngine.CreateParser()
+   在 System.Web.Razor.RazorTemplateEngine.GenerateCodeCore(ITextDocument input, String className, String rootNamespace, String sourceFileName, Nullable`1 cancelToken)
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   在 System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   在 System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   在 System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   在 System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   在 System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-26 13:07:42,333 
+线程ID:[15056] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+ 
+System.InvalidOperationException: 未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, ViewDataDictionary viewData)
+   在 ASP._Page_Views_news_NewsList_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\News\NewsList.cshtml:行号 157
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 13:07:56,885 
+线程ID:[11280] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+ 
+System.InvalidOperationException: 未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, ViewDataDictionary viewData)
+   在 ASP._Page_Views_news_NewsList_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\News\NewsList.cshtml:行号 157
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 13:08:13,610 
+线程ID:[15068] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+ 
+System.InvalidOperationException: 未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, ViewDataDictionary viewData)
+   在 ASP._Page_Views_news_NewsList_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\News\NewsList.cshtml:行号 157
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 13:08:34,572 
+线程ID:[11280] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+ 
+System.InvalidOperationException: 未找到分部视图“~/views/shared/usercontrol/_PartialCategoryType.cshtml”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/views/shared/usercontrol/_PartialCategoryType.cshtml
+   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, ViewDataDictionary viewData)
+   在 ASP._Page_Views_news_NewsList_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\News\NewsList.cshtml:行号 157
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 16:01:07,802 
+线程ID:[8676] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+此请求已被阻止，因为当用在 GET 请求中时，会将敏感信息透漏给第三方网站。若要允许 GET 请求，请将 JsonRequestBehavior 设置为 AllowGet。
+ 
+System.InvalidOperationException: 此请求已被阻止，因为当用在 GET 请求中时，会将敏感信息透漏给第三方网站。若要允许 GET 请求，请将 JsonRequestBehavior 设置为 AllowGet。
+   在 System.Web.Mvc.JsonResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 16:01:16,393 
+线程ID:[8676] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+此请求已被阻止，因为当用在 GET 请求中时，会将敏感信息透漏给第三方网站。若要允许 GET 请求，请将 JsonRequestBehavior 设置为 AllowGet。
+ 
+System.InvalidOperationException: 此请求已被阻止，因为当用在 GET 请求中时，会将敏感信息透漏给第三方网站。若要允许 GET 请求，请将 JsonRequestBehavior 设置为 AllowGet。
+   在 System.Web.Mvc.JsonResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 16:24:22,527 
+线程ID:[2632] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未将对象引用设置到对象的实例。
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP._Page_Views_news_NewsList_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\News\NewsList.cshtml:行号 192
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:03:57,662 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.IO.FileLoadException: 未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get()
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:03:57,751 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+ 
+
+ 
+记录时间：2014-09-26 20:04:31,549 
+线程ID:[6912] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.IO.FileLoadException: 未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get()
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:04:31,809 
+线程ID:[6912] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+ 
+
+ 
+记录时间：2014-09-26 20:05:54,733 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:05:54,797 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:06:35,429 
+线程ID:[14004] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:06:35,431 
+线程ID:[14004] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:06:55,990 
+线程ID:[2080] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:06:55,992 
+线程ID:[2080] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:07:57,471 
+线程ID:[3220] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:07:57,474 
+线程ID:[3220] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:09:13,296 
+线程ID:[3220] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:09:13,334 
+线程ID:[3220] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:10:00,912 
+线程ID:[4464] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:10:00,914 
+线程ID:[4464] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:10:17,839 
+线程ID:[2080] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:10:17,841 
+线程ID:[2080] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:11:41,016 
+线程ID:[4464] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:11:41,019 
+线程ID:[4464] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:12:06,374 
+线程ID:[7884] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.MissingMethodException: 找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+   在 YX.Mir.Model.Models.Mapping.ErrorLogMap..ctor()
+   在 YX.Mir.Model.Models.BaseDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Model\Models\BaseDbContext.cs:行号 35
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.DAL\WebSiteInfoDAL.cs:行号 22
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:12:06,375 
+线程ID:[7884] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法找不到方法:“Void System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.ToTable(System.String)”。
+ 
+
+ 
+记录时间：2014-09-26 20:14:37,129 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  获取网站信息出错:错误出现在Get()方法
+ 
+System.Exception: 获取网站信息出错:错误出现在Get()方法 ---> System.IO.FileLoadException: 未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 YX.Mir.DAL.WebSiteInfoDAL.Get()
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 15
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 YX.Mir.BLL.WebSiteInfoBLL.Get() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.BLL\WebSiteInfoBLL.cs:行号 20
+   在 YX.Mir.WebConfig.get_WebName() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Common\WebConfig.cs:行号 17
+   在 ASP._Page_Views_home_Login_cshtml.Execute() 位置 e:\项目\传奇\YX.Mir.Web\YX.Mir.Web\Views\Home\Login.cshtml:行号 3
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+ 
+记录时间：2014-09-26 20:14:37,179 
+线程ID:[15256] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：  增加错误日志出错:错误出现在Add(ErrorLog log)方法未能加载文件或程序集“EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+ 

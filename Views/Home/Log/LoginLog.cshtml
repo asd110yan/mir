@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "登陆日志";
+}
+<div class="tool" style="margin: 10px 10px">
+    开始时间:<input class="easyui-datetimebox" name="beginTime" id="beginTime" data-options="showSeconds:false"
+                value="" style="width: 150px">&nbsp;-&nbsp;结束时间
+    <input class="easyui-datetimebox" name="endTime" id="endTime" data-options="showSeconds:false"
+           value="" style="width: 150px">
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-search'" id="btnSearch">
+        搜索</a>
+</div>
+<table id="dg">
+</table>
+<script type="text/javascript">
+    $(function() {
+        $("#dg").datagrid({
+        striped:true,
+            width: '100%',
+            rownumbers: true,
+            columns:
+            [
+                [
+                    { field: 'LogId', title: '编号', width: 30, align: 'left',hidden:true },
+                    { field: 'UserName', title: '登录人', width: 50, align: 'left' },
+                    { field: 'LoginTime', title: '登录时间', width: 80, align: 'left', formatter: TimeFormatter },
+                    { field: 'LoginPlace', title: '登录地点', width: 150, align: 'left' },
+                    { field: 'LoginIPAddress', title: '登录IP', width: 180, align: 'left' }
+                ]
+            ],
+            fitColumns: true,
+            loadMsg: "正在加载...",
+            url: "/home/getloginlog",
+            pagination: true,
+            pageSize: 20,
+            pageList: [20, 30, 40, 50, 100],
+            singleSelect: true,
+            toolbar: [{
+                text:"导出excel",
+                iconCls: "icon-export-excel",
+                handler: function () {
+                    alert(1);
+                    $.ajax({
+                        type: "get",
+                        url: "/home/ExportLoginLog",
+                        data: {
+                            beginTime: $("#beginTime").datetimebox("getValue"),
+                            endTime: $("#endTime").datetimebox("getValue")
+                        },
+                        success: function (msg) {
+
+                        }
+                    });
+                }
+            }]
+        });
+
+        //搜索
+        $("#btnSearch").click(function() {
+            $("#dg").datagrid({
+                queryParams: {
+                    beginTime: $("#beginTime").datetimebox("getValue"),
+                    endTime: $("#endTime").datetimebox("getValue")
+                }
+            });
+          //  $("#dg").datagrid("reload");
+        });
+    });
+
+    function TimeFormatter(value, rowData, rowIndex) {
+        return jsonDateFormat(value);
+    }
+
+</script>

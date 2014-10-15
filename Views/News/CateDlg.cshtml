@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "CateDlg";
+}
+<table class="mgTable">
+    <tr>
+        <td class="right">
+            <span style="color: red">*</span>分类名称:
+        </td>
+        <td>
+            <input class="easyui-validatebox" data-options="required:true" id="CateName" style="width: 200px;" value="@ViewBag.Name" />
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            上级分类:
+        </td>
+        <td>
+            <input type="hidden"  id="ParentId" value="@ViewBag.ParentId" />
+            <input class="easyui-validatebox" value="@ViewBag.ParentName" id="ParentName" disabled="true" style="width: 200px;" /><a
+                href="javascript:void(0)" onclick=" $('#ParentName').val(''); $('#ParentId').val(''); "><img
+                    src="../Home/../../easyui/themes/icons_custom/no.png" /></a>&nbsp;<a id="menuBtn"
+                        href="#" onclick=" showMenu(); return false; ">选择</a>
+            <ul id="tree1" class="ztree" style="overflow: auto;">
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            排序:
+        </td>
+        <td>
+            <input class="easyui-numberbox" id="Sort" value="@ViewData["SORT"]" data-options="min:0,required:true" />
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+    var zNodes = @Html.Raw(ViewBag.Category);
+
+    var setting = {
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+       callback:{onClick: function zTreeOnClick(event, treeId, treeNode) {
+            $("#ParentName").val(treeNode.name);
+            $("#ParentId").val(treeNode.id);
+        }}
+    };
+
+    function showMenu() {
+       $.fn.zTree.init($("#tree1"), setting, zNodes);
+    }
+</script>

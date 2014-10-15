@@ -1,0 +1,450 @@
+﻿@using YX.Mir.Model.Models
+@model  YX.Mir.Model.Models.GameNews
+@{
+    ViewBag.Title = "新闻列表";
+}
+<style type="text/css">
+<!--
+  @*  body, table {
+        color: #0081c2;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    table {
+        border-collapse: collapse;
+        empty-cells: show;
+        line-height: 30px;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+*@
+#mytab {
+  color: #0081c2;
+        font-size: 15px;
+        font-weight: bold;
+           border-collapse: collapse;
+        empty-cells: show;
+        line-height: 30px;
+        margin: 0 auto;
+        table-layout: fixed;
+}
+    td { height: 20px; }
+
+    h1, h2, h3 {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        background: #FFF;
+        border: 1px solid #9DB3C5;
+        margin: 20px auto;
+        padding: 1px;
+        width: 90%;
+    }
+
+    .title h1 {
+        background: #2F589C url(../Home/Config/th_bg2.gif);
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        color: #FFF;
+        line-height: 31px;
+        text-align: center;
+    }
+
+    .title th, .title td {
+        border: 1px solid #CAD9EA;
+        padding: 5px;
+    }
+
+
+    /*这个是借鉴一个论坛的样式*/
+
+    table.t1 {
+        border: 1px solid #cad9ea;
+        color: #666;
+    }
+
+    table.t1 th {
+        background-image: url(../Home/Config/th_bg1.gif);
+        background-repeat::
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t1 td, table.t1 th {
+        border: 1px solid #cad9ea;
+        padding: 0 1em 0;
+    }
+
+    table.t1 tr.a1 { background-color: #f5fafe; }
+
+
+
+    table.t2 {
+        border: 1px solid #9db3c5;
+        color: #666;
+    }
+
+    table.t2 th {
+        background-image: url(../Home/Config/th_bg2.gif);
+        background-repeat::
+        color: #fff;
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t2 td {
+        border: 1px dotted #cad9ea;
+        padding: 0 2px 0;
+    }
+
+    table.t2 th {
+        border: 1px solid #a7d1fd;
+        padding: 0 2px 0;
+    }
+
+    table.t2 tr.a1 { background-color: #e8f3fd; }
+
+
+
+    table.t3 {
+        border: 1px solid #fc58a6;
+        color: #720337;
+    }
+
+    table.t3 th {
+        background-image: url(../Home/Config/th_bg3.gif);
+        background-repeat:
+        color: #35031b;
+        height: 30px;
+        repeat-x;
+    }
+
+    table.t3 td {
+        border: 1px dashed #feb8d9;
+        padding: 0 1.5em 0;
+    }
+
+    table.t3 th {
+        border: 1px solid #b9f9dc;
+        padding: 0 2px 0;
+    }
+
+    table.t3 tr.a1 { background-color: #fbd8e8; }
+
+    .lefttd {
+        color: #0081c2;
+        text-align: right;
+        width: 90px;
+    }
+
+    .field-validation-error { color: red }
+-->
+</style>
+<link rel="stylesheet" href="../../kindeditor-4.1.7/themes/default/default.css" />
+<link rel="stylesheet" href="../../kindeditor-4.1.7/plugins/code/prettify.css" />
+<script charset="utf-8" src="../../kindeditor-4.1.7/kindeditor.js"></script>
+<script charset="utf-8" src="../../kindeditor-4.1.7/lang/zh_CN.js"></script>
+<script charset="utf-8" src="../../kindeditor-4.1.7/plugins/code/prettify.js"></script>
+<div id="search" style="margin: 10px">
+    新闻标题:<input type="text" class="easyui-textbox" id="_Title" style="width: 150px" />
+    新闻作者:<input type="text" class="easyui-textbox" id="_Author" />
+    发布起始时间:<input type="text" class="easyui-datetimebox" id="beginTime" />&nbsp;- 发布结束时间:<input
+                                                                                             type="text" class="easyui-datetimebox" id="endTime" />
+    类型:  @{ Html.RenderPartial("_PartialCategoryType", YX.Mir.Common.WebHelper.SetHTMLAttribute(new { ID = "_Type", Class = "easyui-combobox", Value = "0" }));}
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-search'"
+       onclick="_search()">搜索</a>
+</div>
+<div id="dlgNews">
+    <table width="100%" id="mytab"  border="1" class="t1">
+        <tr >
+            <td class="lefttd">
+                带<span style="color: red">*</span>号的为必填
+            </td>
+            <td>@Html.HiddenFor(m => m.ID)</td>
+        </tr>
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red">*</span>新闻标题:</td>
+            <td>@Html.TextBoxFor(m => m.Title, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.Title)
+            </td>
+        </tr>
+        <tr >
+            <td class="lefttd"><span style="color: red">*</span>新闻作者:</td>
+            <td>@Html.TextBoxFor(m => m.Author, new {style = "width:300px"})
+                @Html.ValidationMessageFor(m => m.Author)
+            </td>
+        </tr>
+    
+        <tr class="a1">
+            <td class="lefttd"><span style="color: red"></span>内容:</td>
+            <td>@Html.TextAreaFor(m => m.Content, new {style = "height:500px;width:670px;"})
+                @Html.ValidationMessageFor(m => m.Content)
+            </td>
+        </tr>
+        <tr>
+            <td class="lefttd"><span style="color: red"></span>类型:</td>
+            <td>
+             
+               @{ Html.RenderPartial("_PartialCategoryType",YX.Mir.Common.WebHelper.SetHTMLAttribute(new {ID="Type",Class="easyui-combobox",Value=Model.Type}));}
+            </td>
+        </tr>
+        <tr class="a1">
+            <td colspan="2" align="center">
+                <div id="buttons">
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="aSave()" data-options="iconCls:'icon-save'">保存</a>
+                    &nbsp;  &nbsp;
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="aReset()" data-options="iconCls:'icon-redo'">重置</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="dg">
+</div>
+<script type="text/javascript">
+
+    function aReset() {
+        $("#Title").val("");
+        $("#Author").val("");
+        try {
+            editor1.html("");
+        }
+        catch (e)
+        { }
+        $("#Type").combobox("setValue", 0);
+    }
+    function aSave() {
+        var title = $("#Title");
+        var author = $("#Author");
+        if (!title.val())
+        {
+            $.messager.alert("提示信息", "请输入新闻标题", "info");
+            title.focus();
+            return false;
+        }
+        if (!author.val())
+        {
+            $.messager.alert("提示信息", "请输入新闻作者", "info");
+            author.focus();
+            return false;
+        }
+        if ($("#Type").combobox("getValue") == 0)
+        {
+            $.messager.alert("提示信息", "请选择新闻类型", "info");
+            return false;
+        }
+        $.ajax({
+            type: "post",
+            url:"/news/addnews",
+            data: {ID:$("#ID").val(), Author: author.val(), Title: title.val(), Content: editor1.html(), Type: $("#Type").combobox("getValue") },
+            success: function (msg)
+            {
+                $.messager.alert("提示信息", msg.Message, "info");
+                if (msg.Code == 1) {
+                    $("#dlgNews").dialog("close");
+                    $("#dg").datagrid("reload");
+                }
+            }
+        });
+    }
+
+    $("#dg").datagrid({
+        url: "/news/getnewslist",
+        columns: [
+            [
+                { checkbox: true },
+                { field: "ID", title: "编号", width: 50, align: "left",hidden:true },
+                { field: "Title", title: "标题", width: 200, align: "left" },
+                { field: "Author", title: "作者", width: 80, align: "left" },
+                { field: "Date", title: "时间", width: 150, align: "left", formatter: jsonDateFormat },
+                { field: "Type", title: "类型", width: 80, align: "left" }
+            ]
+        ],
+        pagination: true,
+        toolbar: [
+            {
+                text: "增加",
+                iconCls: "icon-add",
+                handler: function() {
+                    objNews.add();
+                }
+            },
+            {
+                text: "编辑",
+                iconCls: "icon-edit",
+                handler: function () {
+                    objNews.edit();
+                }
+            },
+            {
+                text: "删除",
+                iconCls: "icon-delete",
+                handler: function () {
+                    objNews.delete();
+                }
+            },
+            {
+                text: "刷新",
+                iconCls: "icon-reload",
+                handler: function () {
+                    objNews.refresh();
+                }
+            }
+        ],
+        striped:true,
+        fitColumns:true,
+        pageSize: 20,
+        rownumbers: true
+    });
+
+    function _search() {
+        $("#dg").datagrid({
+                queryParams: {
+                    Title: $("#_Title").val(),
+                    Author: $("#_Author").val(),
+                    beginTime: $("#beginTime").datetimebox("getValue"),
+                    endTime: $("#endTime").datetimebox("getValue"),
+                    Type: $("#_Type").combobox("getValue")
+                }
+            }
+        );
+    }
+
+    function createNewsDlg(title) {
+
+        $("#dlgNews").dialog("open").dialog("setTitle",title);
+    }
+
+ 
+
+    var objNews =
+    {
+        add: function() {
+            createNewsDlg("增加新闻");
+        },
+        edit: function () {
+            var rows = $("#dg").datagrid("getSelections");
+            if (!rows.length)
+            {
+                $.messager.alert("提示信息", "请选择一条要编辑的新闻纪录", "info");
+                return false;
+            }
+            if (rows.length > 1)
+            {
+                $.messager.alert("提示信息", "只能选择一条要编辑的新闻纪录", "info");
+                return false;
+            }
+            createNewsDlg("编辑新闻");
+            var id = rows[0].ID;
+            $("#ID").val(id)
+            $.ajax({
+                type: "get",
+                url: "/news/getnews?rdm="+Math.random(),
+                data: { ID: id },
+                success: function (data) {
+                    $("#Title").val(data.Title);
+                    $("#Author").val(data.Author);
+                    editor1.html(data.Content);
+                    $("#Type").combobox("setValue", data.Type);
+                }
+            });
+        },
+        delete: function () {
+            var items = $("#dg").datagrid("getSelections");
+            if (items.length == 0) {
+                $.messager.alert("提示信息", "请至少选择一条要删除的新闻", "info");
+                return false;
+            }
+            $.messager.confirm("提示信息", "是否删除", function (r) {
+                if (r) {
+                    var str = "";
+                    for (var i = 0; i < items.length; i++) {
+                        str += items[i].ID + ",";
+                    }
+                    str = str.substring(0, str.length - 1);
+                    $.ajax({
+                        type: "post",
+                        url: "/news/deletenews",
+                        data: { ids: str },
+                        success: function (msg) {
+                            $.messager.alert("提示信息", msg.Message, "info");
+                            if (msg.Code == 1) {
+                                $("#dg").datagrid("reload");
+                            }
+                        }
+                    });
+                }
+            });
+        },
+        refresh: function () {
+            $("#dg").datagrid("reload");
+        }
+    };
+
+
+    $("#dlgNews").dialog({
+        width: 820,
+        modal: true,
+        onClose:aReset,
+        buttons:"#buttons",
+    });
+    $("#dlgNews").dialog("close");
+
+    var editor1 = null;
+    KindEditor.ready(function (K) {
+        editor1 = K.create('#Content', {
+            cssPath: '../../kindeditor-4.1.7/plugins/code/prettify.css',
+            uploadJson: '../../kindeditor-4.1.7/asp.net/upload_json.ashx',
+            fileManagerJson: '../../kindeditor-4.1.7/asp.net/file_manager_json.ashx',
+            allowFileManager: true,
+            afterCreate: function () {
+                var self = this;
+                K.ctrl(document, 13, function () {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function () {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+            }
+        });
+        prettyPrint();
+    });
+ 
+    function menuHandler(item) {
+        switch (item.name) {
+            case "add":
+                objNews.add();
+                break;
+            case "edit":
+                objNews.edit();
+                break;
+            case "delete":
+                objNews.delete();
+                break;
+            case "reload":
+                objNews.refresh();
+                break;
+        }
+    }
+    $(function () {
+        $(document).bind('contextmenu', function (e) {
+            e.preventDefault();
+            $('#mm').menu('show', {
+                left: e.pageX,
+                top: e.pageY
+            });
+        });
+    });
+</script>
+<div id="mm" class="easyui-menu" data-options="onClick:menuHandler" style="width:120px;">
+    <div data-options="name:'add',iconCls:'icon-add'">增加 </div>
+    <div data-options="name:'edit',iconCls:'icon-edit'">编辑</div>
+    <div data-options="name:'delete',iconCls:'icon-delete'">删除</div>
+    <div data-options="name:'reload',iconCls:'icon-reload'">刷新</div>
+</div>

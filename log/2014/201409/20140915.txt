@@ -1,0 +1,1841 @@
+
+ 
+记录时间：2014-09-15 11:25:55,759 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:25:56,284 
+线程ID:[7692] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:01,924 
+线程ID:[5420] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:05,381 
+线程ID:[5420] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:05,696 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:13,348 
+线程ID:[4568] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:13,664 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:47,319 
+线程ID:[7692] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:49,061 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:49,383 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:52,055 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:26:52,377 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:27:50,619 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:27:55,256 
+线程ID:[7252] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:34,965 
+线程ID:[7216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:35,291 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:37,292 
+线程ID:[7216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:37,592 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:52,033 
+线程ID:[7216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:52,563 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:58,067 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:58,381 
+线程ID:[7216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:28:59,892 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:00,219 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:08,936 
+线程ID:[5368] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:09,462 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:21,625 
+线程ID:[7860] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:21,951 
+线程ID:[7432] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:51,843 
+线程ID:[7432] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:29:52,309 
+线程ID:[7092] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:30:20,160 
+线程ID:[7200] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:30:20,462 
+线程ID:[7216] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:33:43,846 
+线程ID:[3824] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:34:26,591 
+线程ID:[2880] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:32,013 
+线程ID:[3824] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:32,525 
+线程ID:[5540] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:36,585 
+线程ID:[4568] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:36,799 
+线程ID:[7192] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“menuconfig”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/menuconfig.aspx
+~/Views/home/menuconfig.ascx
+~/Views/Shared/menuconfig.aspx
+~/Views/Shared/menuconfig.ascx
+~/Views/home/menuconfig.cshtml
+~/Views/home/menuconfig.vbhtml
+~/Views/Shared/menuconfig.cshtml
+~/Views/Shared/menuconfig.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:39,224 
+线程ID:[4884] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“loginlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/loginlog.aspx
+~/Views/home/loginlog.ascx
+~/Views/Shared/loginlog.aspx
+~/Views/Shared/loginlog.ascx
+~/Views/home/loginlog.cshtml
+~/Views/home/loginlog.vbhtml
+~/Views/Shared/loginlog.cshtml
+~/Views/Shared/loginlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“loginlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/loginlog.aspx
+~/Views/home/loginlog.ascx
+~/Views/Shared/loginlog.aspx
+~/Views/Shared/loginlog.ascx
+~/Views/home/loginlog.cshtml
+~/Views/home/loginlog.vbhtml
+~/Views/Shared/loginlog.cshtml
+~/Views/Shared/loginlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:39,548 
+线程ID:[3824] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“loginlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/loginlog.aspx
+~/Views/home/loginlog.ascx
+~/Views/Shared/loginlog.aspx
+~/Views/Shared/loginlog.ascx
+~/Views/home/loginlog.cshtml
+~/Views/home/loginlog.vbhtml
+~/Views/Shared/loginlog.cshtml
+~/Views/Shared/loginlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“loginlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/loginlog.aspx
+~/Views/home/loginlog.ascx
+~/Views/Shared/loginlog.aspx
+~/Views/Shared/loginlog.ascx
+~/Views/home/loginlog.cshtml
+~/Views/home/loginlog.vbhtml
+~/Views/Shared/loginlog.cshtml
+~/Views/Shared/loginlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:40,806 
+线程ID:[5540] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:41,121 
+线程ID:[5408] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“errorlog”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/errorlog.aspx
+~/Views/home/errorlog.ascx
+~/Views/Shared/errorlog.aspx
+~/Views/Shared/errorlog.ascx
+~/Views/home/errorlog.cshtml
+~/Views/home/errorlog.vbhtml
+~/Views/Shared/errorlog.cshtml
+~/Views/Shared/errorlog.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:48,939 
+线程ID:[3824] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:38:49,480 
+线程ID:[5540] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:40:39,820 
+线程ID:[4568] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:41:55,601 
+线程ID:[7192] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/config.aspx
+~/Views/home/config.ascx
+~/Views/Shared/config.aspx
+~/Views/Shared/config.ascx
+~/Views/home/config.cshtml
+~/Views/home/config.vbhtml
+~/Views/Shared/config.cshtml
+~/Views/Shared/config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:48:51,741 
+线程ID:[8156] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“Config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/Config.aspx
+~/Views/home/Config.ascx
+~/Views/Shared/Config.aspx
+~/Views/Shared/Config.ascx
+~/Views/home/Config.cshtml
+~/Views/home/Config.vbhtml
+~/Views/Shared/Config.cshtml
+~/Views/Shared/Config.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“Config”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/home/Config.aspx
+~/Views/home/Config.ascx
+~/Views/Shared/Config.aspx
+~/Views/Shared/Config.ascx
+~/Views/home/Config.cshtml
+~/Views/home/Config.vbhtml
+~/Views/Shared/Config.cshtml
+~/Views/Shared/Config.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 11:59:43,340 
+线程ID:[5876] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/home/menu/mgdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg
+ 
+System.InvalidOperationException: 未找到视图“/home/menu/mgdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 12:01:06,874 
+线程ID:[2832] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg.cshtml
+ 
+System.InvalidOperationException: 未找到视图“/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg.cshtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 12:01:59,700 
+线程ID:[3376] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg.cshtml
+ 
+System.InvalidOperationException: 未找到视图“/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/home/menu/mgdlg.cshtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 12:04:52,225 
+线程ID:[4392] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“views/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/menu/views/home/menu/mgdlg.cshtml.aspx
+~/Views/menu/views/home/menu/mgdlg.cshtml.ascx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.aspx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.ascx
+~/Views/menu/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/menu/views/home/menu/mgdlg.cshtml.vbhtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“views/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/menu/views/home/menu/mgdlg.cshtml.aspx
+~/Views/menu/views/home/menu/mgdlg.cshtml.ascx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.aspx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.ascx
+~/Views/menu/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/menu/views/home/menu/mgdlg.cshtml.vbhtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 12:06:05,059 
+线程ID:[7740] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“views/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/menu/views/home/menu/mgdlg.cshtml.aspx
+~/Views/menu/views/home/menu/mgdlg.cshtml.ascx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.aspx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.ascx
+~/Views/menu/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/menu/views/home/menu/mgdlg.cshtml.vbhtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.vbhtml
+ 
+System.InvalidOperationException: 未找到视图“views/home/menu/mgdlg.cshtml”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/menu/views/home/menu/mgdlg.cshtml.aspx
+~/Views/menu/views/home/menu/mgdlg.cshtml.ascx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.aspx
+~/Views/Shared/views/home/menu/mgdlg.cshtml.ascx
+~/Views/menu/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/menu/views/home/menu/mgdlg.cshtml.vbhtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.cshtml
+~/Views/Shared/views/home/menu/mgdlg.cshtml.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 21:13:49,373 
+线程ID:[4344] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+ 
+System.InvalidOperationException: 未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 21:14:12,537 
+线程ID:[7476] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+ 
+System.InvalidOperationException: 未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+ 
+记录时间：2014-09-15 21:14:12,929 
+线程ID:[6408] 
+日志级别：  ERROR 
+出错类：System.Web.Mvc.ExceptionContext property: [(null)] - 
+错误描述：
+
+未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+ 
+System.InvalidOperationException: 未找到视图“/views/home/menu/mdlg”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+/views/home/menu/mdlg
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   在 System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)

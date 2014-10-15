@@ -1,0 +1,347 @@
+﻿@{
+    ViewBag.Title = "菜单配置";
+}
+<div style="width: 98%">
+    <div style="float: left; margin: 10px; width: 20%;">
+        <div id="p" class="easyui-panel" title="菜单组管理" style="background: #fafafa; padding: 10px;">
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'"
+               onclick=" addMenuGroup() " id="btnMGAdd">增加</a> <a href="javascript:void(0)" class="easyui-linkbutton"
+                                                                  data-options="iconCls:'icon-edit',plain:true" id="btnMGEdit" onclick=" editMenuGroup() ">编辑</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-delete',plain:true"
+               id="btnMGRemove" onclick=" deleteMenuGroup() ">删除</a>
+            <ul id="tree" class="ztree">
+            </ul>
+            <script type="text/javascript">
+                var setting = {
+                    data: {
+                        simpleData: {
+                            enable: true
+                        }
+                    },
+                    async: {
+                        enable: true,
+                        url: "/menu/getmenugrouptree",
+                        autoParam: ["id", "name=n", "level=lv"]
+                    },
+                    callback: {
+                        onClick: function zTreeOnClick(event, treeId, treeNode) {
+                            g_PId = treeNode.id;
+                            g_PName = treeNode.name;
+                            $("#m_Dg").datagrid({
+                                queryParams: { mgId: treeNode.id }
+                            });
+                            $("#m_Dg").datagrid("reload");
+                        },
+                        beforeRemove: beforeRemove,
+                        beforeRename: beforeRename
+
+                    }
+                };
+
+                function beforeRemove(treeId, treeNode) {
+                    var zTree = $.fn.zTree.getZTreeObj("tree");
+                    zTree.selectNode(treeNode);
+                    return confirm("确认删除 节点 -- " + treeNode.name + " 吗？");
+                }
+
+                function beforeRename(treeId, treeNode, newName) {
+                    if (newName.length == 0) {
+                        alert("节点名称不能为空.");
+                        return false;
+                    }
+                    return true;
+                }
+
+
+                $(function() {
+                    $.fn.zTree.init($("#tree"), setting);
+                    var zTree = $.fn.zTree.getZTreeObj("tree");
+                    zTree.expandAll(true);
+                });
+            </script>
+        </div>
+        <div id="MGDlg">
+        </div>
+    </div>
+    <div style="float: left; margin: 10px; width: 65%">
+        <div id="p" class="easyui-panel" title="菜单管理" style="background: #fafafa; padding: 10px;">
+            <div >
+                <table id="m_Dg">
+                </table>
+                <div id="m_Dlg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="iconDlg">
+
+</div>
+<script type="text/javascript">
+    function choseIcon(ele) {
+        var a = $(ele);
+        $("#txtIcon").val(a.find("img:eq(0)").attr("src"));
+        $("#iconDlg").dialog("close");
+    }
+
+
+    function showIconDlg() {
+        $("#iconDlg").dialog({
+            title: "选择图标",
+            width: 800,
+            modal: true,
+            cache: true
+        });
+
+        $("#iconDlg").dialog("refresh", "/home/icon");
+    }
+</script>
+<script type="text/javascript">
+    var g_URL;
+    var g_PId = 0;
+    var g_PName = "";
+    var g_Id = 0;
+
+    //菜单组对话框
+    function createDlg(title) {
+        $("#MGDlg").dialog({
+            cache: false,
+            modal: true,
+            width: 350,
+            buttons: [
+                {
+                    text: '保存',
+                    handler: function() {
+                        if (!$("#txtMGName").validatebox("isValid") || !$("#txtSort").numberbox("isValid")) {
+                            return false;
+                        }
+                        var icon = $("#txtIcon").val();
+                        $.ajax({
+                            type: "post",
+                            url: g_URL,
+                            data: {
+                                name: $("#txtMGName").val(),
+                                pid: $("#txtParentId").val(),
+                                sort: $("#txtSort").val(),
+                                icon: icon
+                            },
+                            success: function(msg) {
+                                $.messager.alert("提示信息", msg.Message, "info");
+                                if (msg.Code == 1) {
+                                    $("#MGDlg").dialog("close");
+                                    var treeObj = $.fn.zTree.getZTreeObj("tree");
+                                    treeObj.reAsyncChildNodes(null, "refresh");
+                                }
+                            }
+                        });
+                    },
+                    iconCls: 'icon-save'
+                },
+                {
+                    text: '关闭',
+                    handler: function() {
+                        $("#MGDlg").dialog("close");
+                    },
+                    iconCls: 'icon-cancel'
+                }
+            ]
+        });
+        $("#MGDlg").dialog("refresh", "/menu/mgdlg?pId=" + g_PId + "&pName=" + g_PName + "&id=" + g_Id).dialog("setTitle", title);
+    }
+
+    //增加菜单组
+    function addMenuGroup() {
+        g_Id = 0;
+        g_URL = "/menu/addmenugroup";
+        createDlg("增加菜单组");
+    }
+
+    //编辑菜单组
+    function editMenuGroup() {
+        var zTree = $.fn.zTree.getZTreeObj("tree");
+        var nodes = zTree.getSelectedNodes();
+        if (nodes.length == 0) {
+            $.messager.alert("提示信息", "请选择一个要编辑的菜单组", "info");
+            return false;
+        }
+        var parentNode = nodes[0].getParentNode();
+        g_PId = parentNode ? parentNode.id : 0;
+        g_Id = nodes[0].id;
+        g_PName = parentNode ? parentNode.name : "";
+        g_URL = "/menu/editmenugroup?id=" + nodes[0].id;
+        createDlg("编辑菜单组");
+    }
+
+    //删除菜单组
+    function deleteMenuGroup() {
+        var zTree = $.fn.zTree.getZTreeObj("tree");
+        var nodes = zTree.getSelectedNodes();
+        if (nodes.length == 0) {
+            $.messager.alert("提示信息", "请选择一个要删除的菜单组", "info");
+            return false;
+        }
+        var id = nodes[0].id;
+        $.messager.confirm("提示信息", "是否删除", function(r) {
+            if (r) {
+                $.ajax({
+                    type: "post",
+                    url: "/menu/deletemenugroup",
+                    data: { id: id },
+                    success: function(msg) {
+                        $.messager.alert("提示信息", msg.Message, "info");
+                        if (msg.Code == 1) {
+                            var treeObj = $.fn.zTree.getZTreeObj("tree");
+                            treeObj.reAsyncChildNodes(null, "refresh");
+                        }
+                    }
+                });
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(function() {
+        $("#m_Dg").datagrid({
+            toolbar: [
+                {
+                    iconCls: 'icon-add',
+                    text: '增加',
+                    handler: addMenu
+                }, {
+                    iconCls: 'icon-edit',
+                    text: '编辑',
+                    handler: editMenu
+                }, {
+                    iconCls: 'icon-delete',
+                    text: '删除',
+                    handler: deleteMenu
+                }
+            ],
+            url: "/menu/getmenulist",
+            width: '100%',
+            fitColumns: true,
+            rownumbers: true,
+            pagination: true,
+            pageList: [10, 20, 30, 40, 50],
+            pageSize: 10,
+            striped: true,
+            columns: [
+                [
+                    { checkbox: true },
+                    { field: 'MenuID', title: '编号', width: 30,hidden:true },
+                    { field: 'MenuName', title: '菜单名称', width: 100 },
+                    { field: 'MGName', title: '菜单组名称', width: 100 },
+                    {
+                        field: 'Icon',
+                        title: '图标',
+                        align: 'center',
+                        width: 32,
+                        formatter: function(value, rowData, rowIndex) {
+                            return "<img src='" + value + "' width='16' height='16' />";
+                        }
+                    },
+                    { field: 'Page', title: '所在页面', width: 150 }
+                ]
+            ]
+        });
+            }); 
+    //菜单组对话框
+    function createMenuDlg(title) {
+        $("#m_Dlg").dialog({
+            cache: false,
+            modal: true,
+            width: 350,
+            buttons: [
+                {
+                    text: '保存',
+                    handler: function() {
+                        if (!$("#MenuName").validatebox("isValid") || !$("#Sort").numberbox("isValid") || !$("#Page").validatebox("isValid")) {
+                            return false;
+                        }
+                        var icon = $("#txtIcon").val();
+                        $.ajax({
+                            type: "post",
+                            url: g_URL,
+                            data: {
+                                name: $("#MenuName").val(),
+                                pId: $("#MGId").val(),
+                                sort: $("#Sort").val(),
+                                icon: icon,
+                                page: $("#Page").val()
+                            },
+                            success: function(msg) {
+                                $.messager.alert("提示信息", msg.Message, "info");
+                                if (msg.Code == 1) {
+                                    $("#m_Dlg").dialog("close");
+                                    $("#m_Dg").datagrid("reload");
+                                }
+                            }
+                        });
+                    },
+                    iconCls: 'icon-save'
+                },
+                {
+                    text: '关闭',
+                    handler: function() {
+                        $("#m_Dlg").dialog("close");
+                    },
+                    iconCls: 'icon-cancel'
+                }
+            ]
+        });
+        $("#m_Dlg").dialog("refresh", "/menu/mdlg?id=" + g_Id).dialog("setTitle", title);
+    }
+
+    //增加菜单
+    function addMenu() {
+        g_Id = 0;
+        g_URL = "/menu/addmenu";
+        createMenuDlg("增加菜单");
+    }
+
+    //编辑菜单
+    function editMenu() {
+        var items = $("#m_Dg").datagrid("getSelections");
+        if (items.length == 0) {
+            $.messager.alert("提示信息", "请选择一条要编辑的菜单", "info");
+            return false;
+        }
+        if (items.length > 1) {
+            $.messager.alert("提示信息", "只能选择一条要编辑的菜单", "info");
+            return false;
+        }
+        g_URL = "/menu/editmenu?id=" + items[0].MenuID;
+        g_Id = items[0].MenuID;
+        createMenuDlg("编辑菜单");
+    }
+
+    //删除菜单
+    function deleteMenu() {
+        var items = $("#m_Dg").datagrid("getSelections");
+        if (items.length == 0) {
+            $.messager.alert("提示信息", "请至少选择一条要编辑的菜单", "info");
+            return false;
+        }
+        $.messager.confirm("提示信息", "是否删除", function(r) {
+            if (r) {
+                var str = "";
+                for (var i = 0; i < items.length; i++) {
+                    str += items[i].MenuID + ",";
+                }
+                str = str.substring(0, str.length - 1);
+                $.ajax({
+                    type: "post",
+                    url: "/menu/deletemenu",
+                    data: { ids: str },
+                    success: function(msg) {
+                        $.messager.alert("提示信息", msg.Message, "info");
+                        if (msg.Code == 1) {
+                            $("#m_Dg").datagrid("reload");
+                        }
+                    }
+                });
+            }
+        });
+
+    }
+</script>

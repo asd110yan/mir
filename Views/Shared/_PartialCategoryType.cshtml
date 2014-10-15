@@ -1,0 +1,10 @@
+﻿
+<input type="text" class="@ViewData["Class"]" id="@ViewData["ID"]"/>
+<script type="text/javascript">
+    $('#@ViewData["ID"]').combobox({
+        url: "/news/getallcate",
+        valueField: "CateId",
+        textField: "CateName"
+    });
+    $('#@ViewData["ID"]').combobox("setValue", @ViewData["Value"]);
+</script>
